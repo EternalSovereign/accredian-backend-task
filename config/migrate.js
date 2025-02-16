@@ -1,7 +1,7 @@
 const { exec } = require("child_process");
 
 // Run Prisma migrate command
-exec("npx prisma migrate dev --name init", (error, stdout, stderr) => {
+exec("npx prisma migrate deploy", (error, stdout, stderr) => {
     if (error) {
         console.error(`Error: ${error.message}`);
         return;
